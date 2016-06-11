@@ -1,2 +1,2 @@
-# webpack-demo
-A sample Visual Studio project using WebPack
+# MvcApiAngularDemo
+A Visual Studio solution with an Asp.net MVC Web Api 2 backend and an Angular front end.
