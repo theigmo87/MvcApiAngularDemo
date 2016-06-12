@@ -14,62 +14,22 @@
             display:none;
         }
 
-        .box3, .box2, .box1 {  
-          display:flex;
-          box-sizing: border-box;
-          min-width:100%;
-        }
-
-        .box1 {  
-          max-height:70%;
-          flex:1 1 70%;
-        }
-
-        .box2 {
-          height:20px;  
-        }
-
-        .box3 {  
-          height:30%;
-          max-height:30%;
-          flex:1 1 30%;
-        }
-
         .boxWithHeight {
           box-sizing: border-box;
           height: 100%;
         }
 
-        footer{
-            position:static;
-            max-height:64px;
-            border-top:1px solid blue;
+        footer {
+            position: static;
+            max-height: 64px;
+            border-top: 1px solid blue;
         }
 
     </style>
 </head>
 <body ng-app="myApp" ng-cloak layout="column">
-
-    <md-toolbar>
-        toolbar
-    </md-toolbar>
-    <div flex layout="row">
-        <md-sidenav flex="15" md-is-locked-open="true" class="md-whiteframe-z1">
-            <md-content class="boxWithHeight" layout="column" flex>
-                <section flex="40">flex="40"</section>
-                <section flex>flex</section>
-            </md-content>
-        </md-sidenav>
-        <div layout="column" flex>
-            <section flex>
-                content
-            </section>
-            <footer flex>
-                flex
-            </footer>
-        </div>
-
-    </div>
+    <app-layout flex layout="column">
+    </app-layout>
     @Scripts.Render("~/Content/appJs")
 </body>
 </html>

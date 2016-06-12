@@ -10,7 +10,7 @@ module.exports = {
         extensions: ['', '.js', '.json', '.coffee']
     },
   module: {
-    loaders: [
+      loaders: [
       {
         test: /.json$/,
         loaders: [
@@ -37,6 +37,10 @@ module.exports = {
           'ng-annotate',
           'babel'
         ]
+      },
+      {
+          test: /\.html$/,
+          loader:'html-loader'
       }
     ]
   },

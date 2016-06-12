@@ -16,9 +16,15 @@ gulp.task('test:auto', gulp.series('karma:auto-run'));
 gulp.task('serve', gulp.series('webpack:watch', 'watch', 'browsersync'));
 gulp.task('serve:dist', gulp.series('default', 'browsersync:dist'));
 gulp.task('default', gulp.series('clean', 'build'));
+gulp.task('appWatch', appWatch);
 gulp.task('watch', watch);
 
 function watch(done) {
   gulp.watch(conf.path.src('**/*.html'), browserSync.reload);
   done();
+}
+
+function appWatch(done) {
+    gulp.watch([conf.path.src('*')], gulp.series('clean', 'build'));
+    done();
 }

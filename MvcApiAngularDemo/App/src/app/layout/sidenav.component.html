@@ -1,0 +1,37 @@
+﻿<!--<md-sidenav md-is-locked-open="true" class="md-whiteframe-z1">
+    <md-content class="boxWithHeight" layout="column" flex>
+        
+    </md-content>
+</md-sidenav>-->
+
+<md-sidenav class="md-sidenav-left"
+            md-component-id="navmenu"
+            md-is-locked-open="$mdMedia('gt-md')"
+            md-disable-backdrop
+            md-whiteframe="4">
+    <md-toolbar class="md-theme-indigo">
+        <h1 class="md-toolbar-tools">Sidenav Left</h1>
+    </md-toolbar>
+    <md-content layout-padding>
+        <section flex="40">
+            <ul>
+                <li>
+                    <a ui-sref="dashboard">Dashboard</a>
+                </li>
+                <li>
+                    <a ui-sref="paystubs">My Paystubs</a>
+                </li>
+            </ul>
+        </section>
+        <section flex>
+            {{ $ctrl.message }}
+        </section>
+        <md-button ng-click="$ctrl.close()" class="md-primary" hide-gt-md>
+            Close Sidenav Left
+        </md-button>
+        <p hide show-gt-md>
+            This sidenav is locked open on your device. To go back to the default behavior,
+            narrow your display.
+        </p>
+    </md-content>
+</md-sidenav>

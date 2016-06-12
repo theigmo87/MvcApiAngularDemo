@@ -2,5 +2,4 @@
 import angular from 'angular';
 import "../../node_modules/angular-material/angular-material.css";
 
-require("./app/app.component.js");
-
+require("./app/myApp.module.js"); 

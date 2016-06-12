@@ -1,0 +1,19 @@
+﻿<md-toolbar>
+    toolbar
+</md-toolbar>
+<div flex layout="row">
+    <sidenav flex-15 layout="row"></sidenav>
+    <div layout="column" flex>
+        <section flex>
+            <div>
+                <button type="button" ng-click="$ctrl.toggleLeft()">
+                    open left nav
+                </button>
+            </div>
+            <div ui-view></div>
+        </section>
+        <footer flex>
+            flex
+        </footer>
+    </div>
+</div>
