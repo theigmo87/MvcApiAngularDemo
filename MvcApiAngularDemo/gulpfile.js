@@ -19,6 +19,6 @@ gulp.task('default', gulp.series('clean', 'build'));
 gulp.task('watch', watch);
 
 function watch(done) {
-  gulp.watch(conf.path.src('app/**/*.html'), browserSync.reload);
+  gulp.watch(conf.path.src('**/*.html'), browserSync.reload);
   done();
 }

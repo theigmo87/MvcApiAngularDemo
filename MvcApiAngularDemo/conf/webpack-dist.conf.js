@@ -6,15 +6,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 
 module.exports = {
+    resolve: {
+        extensions: ['', '.js', '.json', '.coffee']
+    },
   module: {
-    preLoaders: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'eslint'
-      }
-    ],
-
     loaders: [
       {
         test: /.json$/,
@@ -32,8 +27,12 @@ module.exports = {
         ]
       },
       {
+          test: /\.(png|eot|svg|ttf|woff(2)?)(\?v=\d+\.\d+\.\d+)?/,
+          loader: 'url'
+      },
+      {
         test: /\.js$/,
-        exclude: /node_modules/,
+        exclude: /(node_modules|bower_components)/,
         loaders: [
           'ng-annotate',
           'babel'
@@ -42,12 +41,19 @@ module.exports = {
     ]
   },
   plugins: [
+      new webpack.ProvidePlugin({    // <added>
+          jQuery: 'jquery',
+          $: 'jquery',
+          jquery: 'jquery',
+          toastr: 'toastr',
+          moment: 'moment'
+      }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.NoErrorsPlugin(),
-    new HtmlWebpackPlugin({
-      template: conf.path.src('index.html'),
-      inject: true
-    }),
+    //new HtmlWebpackPlugin({
+    //  template: conf.path.src('index.html'),
+    //  inject: true
+    //}),
     new webpack.optimize.UglifyJsPlugin({
       compress: {unused: true, dead_code: true} // eslint-disable-line camelcase
     })

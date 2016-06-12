@@ -1,0 +1,11 @@
+<header class="header">
+  <h1>todos</h1>
+    <div>
+        <a ui-sref="login">Login</a>
+    </div>
+  <todo-text-input
+    new-todo="true"
+    on-save="$ctrl.handleSave(text)"
+    placeholder="What needs to be done?"
+  ></todo-text-input>
+</header>

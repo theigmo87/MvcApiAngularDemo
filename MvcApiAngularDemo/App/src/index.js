@@ -1,22 +1,6 @@
+//angular stuff
 import angular from 'angular';
-import 'todomvc-app-css/index.css';
+import "../../node_modules/angular-material/angular-material.css";
 
-import {TodoService} from './app/todos/todos';
-import {App} from './app/containers/App';
-import {Header} from './app/components/Header';
-import {MainSection} from './app/components/MainSection';
-import {TodoTextInput} from './app/components/TodoTextInput';
-import {TodoItem} from './app/components/TodoItem';
-import {Footer} from './app/components/Footer';
+require("./app/app.component.js");
 
-import './index.scss';
-
-angular
-  .module('app', [])
-  .service('todoService', TodoService)
-  .component('app', App)
-  .component('headerComponent', Header)
-  .component('footerComponent', Footer)
-  .component('mainSection', MainSection)
-  .component('todoTextInput', TodoTextInput)
-  .component('todoItem', TodoItem);

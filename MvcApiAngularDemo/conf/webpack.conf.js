@@ -6,6 +6,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 
 module.exports = {
+  resolve: {
+    extensions: ['', '.js', '.json', '.coffee']
+  },
   module: {
     loaders: [
       {
