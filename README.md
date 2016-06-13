@@ -8,6 +8,9 @@ A Visual Studio solution with an Asp.net MVC Web Api 2 backend and an Angular fr
 </h3>
 <ul>
 	<li>
+		https://toddmotto.com/rewriting-angular-styleguide-angular-2
+	</li>
+	<li>
 		http://developer.telerik.com/featured/webpack-for-visual-studio-developers/
 	</li>
 	<li>
