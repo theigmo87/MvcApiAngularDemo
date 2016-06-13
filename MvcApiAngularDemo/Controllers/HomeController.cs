@@ -6,6 +6,12 @@ using System.Web.Mvc;
 
 namespace MvcApiAngularDemo.Controllers
 {
+    public class HtmlResult : FilePathResult
+    {
+        public HtmlResult(string path)
+            : base(path, "text/html") { }
+    }
+
     public class HomeController : Controller
     {
         public ActionResult Index()
@@ -13,18 +19,9 @@ namespace MvcApiAngularDemo.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public HtmlResult StaticIndex()
         {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+            return new HtmlResult("~/App/dist/index.htmlapp/index.html");
         }
     }
 }

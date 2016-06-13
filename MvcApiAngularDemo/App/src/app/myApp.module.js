@@ -13,8 +13,15 @@ require('./services/services.module.js');
         'myApp.layout',
         'myApp.dashboard',
         'myApp.employees'
-    ]).config(function($stateProvider, $urlRouterProvider){
-        //
+    ]).config(function ($stateProvider, $urlRouterProvider, $urlMatcherFactory, $locationProvider) {
+        // TODO: Get this working.
+        // case insensitive urls
+        // $urlMatcherFactory.caseInsensitive(true);
+        // uses ! instead of #
+        // IIS needs a url rewrite rule to support this
+        // https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#user-content-how-to-configure-your-server-to-work-with-html5mode
+        // $locationProvider.html5Mode(true);
+
         // For any unmatched url, redirect to /dashboard
         $urlRouterProvider.otherwise("/dashboard");
         //
@@ -22,7 +29,7 @@ require('./services/services.module.js');
         $stateProvider
           .state('dashboard', {
               url: "/dashboard",
-              template: '<dashboard></dashboard>' 
+              template: '<dashboard></dashboard>'
           })
           .state('employees', {
               url: "/employees",
