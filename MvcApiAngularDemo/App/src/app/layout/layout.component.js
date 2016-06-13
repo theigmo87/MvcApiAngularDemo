@@ -1,7 +1,7 @@
 ﻿(function () {
     'use strict';
 
-    function layoutController($timeout, $mdSidenav) {
+    function layoutController($timeout, $mdSidenav, $log) {
         this.toggleLeft = buildDelayedToggler('navmenu');
         /**
          * Supplies a function that will continue to operate until the

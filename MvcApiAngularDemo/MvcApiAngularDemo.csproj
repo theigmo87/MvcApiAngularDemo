@@ -134,77 +134,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\dist\index.js" />
-    <Content Include="App\src.johnpapa\app\app.module.js" />
-    <Content Include="App\src.johnpapa\app\avengers\avengers-spaghetti.js" />
-    <Content Include="App\src.johnpapa\app\avengers\avengers.html" />
-    <Content Include="App\src.johnpapa\app\avengers\avengers.js" />
-    <Content Include="App\src.johnpapa\app\avengers\avengers.module.js" />
-    <Content Include="App\src.johnpapa\app\avengers\config.route.js" />
-    <Content Include="App\src.johnpapa\app\blocks\exception\exception-handler.provider.js" />
-    <Content Include="App\src.johnpapa\app\blocks\exception\exception.js" />
-    <Content Include="App\src.johnpapa\app\blocks\exception\exception.module.js" />
-    <Content Include="App\src.johnpapa\app\blocks\logger\logger.js" />
-    <Content Include="App\src.johnpapa\app\blocks\logger\logger.module.js" />
-    <Content Include="App\src.johnpapa\app\blocks\router\routehelper.js" />
-    <Content Include="App\src.johnpapa\app\blocks\router\router.module.js" />
-    <Content Include="App\src.johnpapa\app\core\config.js" />
-    <Content Include="App\src.johnpapa\app\core\constants.js" />
-    <Content Include="App\src.johnpapa\app\core\core.module.js" />
-    <Content Include="App\src.johnpapa\app\core\dataservice.js" />
-    <Content Include="App\src.johnpapa\app\dashboard\config.route.js" />
-    <Content Include="App\src.johnpapa\app\dashboard\dashboard.html" />
-    <Content Include="App\src.johnpapa\app\dashboard\dashboard.js" />
-    <Content Include="App\src.johnpapa\app\dashboard\dashboard.module.js" />
-    <Content Include="App\src.johnpapa\app\layout\layout.module.js" />
-    <Content Include="App\src.johnpapa\app\layout\shell.html" />
-    <Content Include="App\src.johnpapa\app\layout\shell.js" />
-    <Content Include="App\src.johnpapa\app\layout\sidebar.html" />
-    <Content Include="App\src.johnpapa\app\layout\sidebar.js" />
-    <Content Include="App\src.johnpapa\app\layout\topnav.html" />
-    <Content Include="App\src.johnpapa\app\widgets\ccSidebar.js" />
-    <Content Include="App\src.johnpapa\app\widgets\ccSpinner.js" />
-    <Content Include="App\src.johnpapa\app\widgets\ccWidgetClose.js" />
-    <Content Include="App\src.johnpapa\app\widgets\ccWidgetHeader.js" />
-    <Content Include="App\src.johnpapa\app\widgets\ccWidgetMinimize.js" />
-    <Content Include="App\src.johnpapa\app\widgets\widgetheader.html" />
-    <Content Include="App\src.johnpapa\app\widgets\widgets.module.js" />
-    <Content Include="App\src.johnpapa\content\customtheme.css" />
-    <Content Include="App\src.johnpapa\content\images\AngularJS-small.png" />
-    <Content Include="App\src.johnpapa\content\images\avengersicon-xs.png" />
-    <Content Include="App\src.johnpapa\content\images\avengersicon.png" />
-    <Content Include="App\src.johnpapa\content\images\busy.gif" />
-    <Content Include="App\src.johnpapa\content\images\gg.png" />
-    <Content Include="App\src.johnpapa\content\images\gruntjs.jpg" />
-    <Content Include="App\src.johnpapa\content\styles.css" />
-    <Content Include="App\src.johnpapa\test\lib\bindPolyfill.js" />
-    <Content Include="App\src.johnpapa\test\lib\mockData.js" />
-    <Content Include="App\src.johnpapa\test\lib\specHelper.js" />
-    <Content Include="App\src.johnpapa\test\midway\controller.spec.js" />
-    <Content Include="App\src.johnpapa\test\midway\dataservice.spec.js" />
-    <Content Include="App\src.johnpapa\test\midway\template.spec.js" />
-    <Content Include="App\src.johnpapa\test\midway\view-requests.spec.js" />
-    <Content Include="App\src.johnpapa\test\specs\avengers-route.spec.js" />
-    <Content Include="App\src.johnpapa\test\specs\avengers.spec.js" />
-    <Content Include="App\src.johnpapa\test\specs\ccSidebar.spec.js" />
-    <Content Include="App\src.johnpapa\test\specs\dashboard-route.spec.js" />
-    <Content Include="App\src.johnpapa\test\specs\dashboard.spec.js" />
-    <Content Include="App\src.johnpapa\test\specs\dataservice.spec.js" />
-    <Content Include="App\src.johnpapa\test\specs\exception-handler.provider.spec.js" />
-    <Content Include="App\src.johnpapa\test\specs\sidebar.spec.js" />
-    <Content Include="App\src.old\login\login.html" />
-    <Content Include="App\src.old\login\login.js" />
-    <Content Include="App\src\app\paystubs\paystubs.component.html" />
-    <Content Include="App\src\app\paystubs\paystubs.component.js" />
-    <Content Include="App\src\app\paystubs\paystubs.module.js" />
+    <Content Include="App\src\app\employees\employees.component.html" />
+    <Content Include="App\src\app\employees\employees.component.js" />
+    <Content Include="App\src\app\employees\employees.module.js" />
     <Content Include="App\src\app\dashboard\dashboard.component.html" />
     <Content Include="App\src\app\dashboard\dashboard.component.js" />
     <Content Include="App\src\app\dashboard\dashboard.module.js" />
+    <Content Include="App\src\app\myApp.module.js" />
+    <Content Include="App\src\app\services\employees.factory.js" />
     <Content Include="App\src\app\layout\layout.component.html" />
     <Content Include="App\src\app\layout\layout.module.js" />
     <Content Include="App\src\app\layout\layout.component.js" />
     <Content Include="App\src\app\layout\sidenav.component.html" />
     <Content Include="App\src\app\layout\sidenav.component.js" />
-    <Content Include="App\src\app\myApp.module.js" />
+    <Content Include="App\src\app\services\services.module.js" />
     <Content Include="App\src\index.js" />
     <Content Include="App\src\test\lib\bindPolyfill.js" />
     <Content Include="App\src\test\lib\mockData.js" />
@@ -238,29 +181,6 @@
     <Content Include="gulp_tasks\partials.js" />
     <Content Include="gulp_tasks\webpack.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="App\src.old\app\components\Footer.html" />
-    <Content Include="App\src.old\app\components\Footer.js" />
-    <Content Include="App\src.old\app\components\Footer.spec.js" />
-    <Content Include="App\src.old\app\components\Header.html" />
-    <Content Include="App\src.old\app\components\Header.js" />
-    <Content Include="App\src.old\app\components\Header.spec.js" />
-    <Content Include="App\src.old\app\components\MainSection.html" />
-    <Content Include="App\src.old\app\components\MainSection.js" />
-    <Content Include="App\src.old\app\components\MainSection.spec.js" />
-    <Content Include="App\src.old\app\components\TodoItem.html" />
-    <Content Include="App\src.old\app\components\TodoItem.js" />
-    <Content Include="App\src.old\app\components\TodoItem.spec.js" />
-    <Content Include="App\src.old\app\components\TodoTextInput.html" />
-    <Content Include="App\src.old\app\components\TodoTextInput.js" />
-    <Content Include="App\src.old\app\components\TodoTextInput.spec.js" />
-    <Content Include="App\src.old\app\constants\TodoFilters.js" />
-    <Content Include="App\src.old\app\constants\VisibilityFilters.js" />
-    <Content Include="App\src.old\app\containers\App.html" />
-    <Content Include="App\src.old\app\containers\App.js" />
-    <Content Include="App\src.old\app\todos\todos.js" />
-    <Content Include="App\src.old\app\todos\todos.spec.js" />
-    <Content Include="App\src.old\index.html" />
-    <Content Include="App\src.old\index.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -283,13 +203,9 @@
     <Content Include=".babelrc" />
     <Content Include=".yo-rc.json" />
     <Content Include="package.json" />
-    <Content Include="App\src.old\index.scss" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bower.json" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App\src.johnpapa\test\.jshintrc" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\src\test\.jshintrc" />

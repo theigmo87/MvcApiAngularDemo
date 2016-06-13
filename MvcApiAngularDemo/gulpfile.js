@@ -25,6 +25,6 @@ function watch(done) {
 }
 
 function appWatch(done) {
-    gulp.watch([conf.path.src('*')], gulp.series('clean', 'build'));
+    gulp.watch([conf.path.src('**/*.js'), conf.path.src('**/*.html')], gulp.series('clean', 'build'));
     done();
 }
