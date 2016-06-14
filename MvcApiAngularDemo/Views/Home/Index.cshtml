@@ -27,9 +27,18 @@
 
     </style>
 </head>
+<base href="~/App/src/" />
 <body ng-app="myApp" ng-cloak layout="column">
     <app-layout flex layout="column">
     </app-layout>
-    @Scripts.Render("~/Content/appJs")
+    @if (HttpContext.Current.IsDebuggingEnabled)
+    {
+        <script src="~/App/.tmp/index.js"></script>
+        
+    }else {
+        <text>
+            @Scripts.Render("~/Content/appJs")
+        </text>
+    }
 </body>
 </html>

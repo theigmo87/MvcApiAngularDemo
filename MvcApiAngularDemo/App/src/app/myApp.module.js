@@ -9,11 +9,11 @@ require('./services/services.module.js');
     angular.module('myApp', [
         require('angular-ui-router'),
         require('angular-material'),
-        'myApp.services',
+        'myApp.services', 
         'myApp.layout',
         'myApp.dashboard',
         'myApp.employees'
-    ]).config(function ($stateProvider, $urlRouterProvider, $urlMatcherFactory, $locationProvider) {
+    ]).config(function ($stateProvider, $urlRouterProvider) {
         // TODO: Get this working.
         // case insensitive urls
         // $urlMatcherFactory.caseInsensitive(true);

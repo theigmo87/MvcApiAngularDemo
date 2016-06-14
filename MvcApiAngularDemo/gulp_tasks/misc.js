@@ -7,10 +7,15 @@ const filter = require('gulp-filter');
 const conf = require('../conf/gulp.conf');
 
 gulp.task('clean', clean);
+gulp.task('clean:dev', cleanDev);
 gulp.task('other', other);
 
 function clean() {
   return del([conf.paths.dist, conf.paths.tmp]);
+}
+
+function cleanDev() {
+    return del([conf.paths.tmp]);
 }
 
 function other() {

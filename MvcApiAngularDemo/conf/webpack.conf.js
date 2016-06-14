@@ -6,43 +6,47 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 
 module.exports = {
-  resolve: {
-    extensions: ['', '.js', '.json', '.coffee']
-  },
-  module: {
-    loaders: [
-      {
-        test: /.json$/,
+    resolve: {
+        extensions: ['', '.js', '.json', '.coffee']
+    },
+    module: {
         loaders: [
-          'json'
+        {
+            test: /.json$/,
+            loaders: [
+              'json'
+            ]
+        },
+        {
+            test: /\.(css|scss)$/,
+            loaders: [
+              'style',
+              'css',
+              'sass',
+              'postcss'
+            ]
+        },
+        {
+            test: /\.(png|eot|svg|ttf|woff(2)?)(\?v=\d+\.\d+\.\d+)?/,
+            loader: 'url'
+        },
+        {
+            test: /\.js$/,
+            exclude: /(node_modules|bower_components)/,
+            loaders: [
+              'ng-annotate',
+              'babel'
+            ]
+        },
+        {
+            test: /\.html$/,
+            loader: 'html-loader'
+        }
         ]
-      },
-      {
-        test: /\.(css|scss)$/,
-        loaders: [
-          'style',
-          'css',
-          'sass',
-          'postcss'
-        ]
-      },
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loaders: [
-          'ng-annotate',
-          'babel'
-        ]
-      }
-    ]
-  },
+    },
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.NoErrorsPlugin(),
-    new HtmlWebpackPlugin({
-      template: conf.path.src('index.html'),
-      inject: true
-    })
+    new webpack.NoErrorsPlugin()
   ],
   postcss: () => [autoprefixer],
   debug: true,

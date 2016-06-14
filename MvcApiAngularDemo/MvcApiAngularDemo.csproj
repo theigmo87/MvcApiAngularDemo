@@ -172,6 +172,7 @@
     <Content Include="conf\webpack-dist.conf.js" />
     <Content Include="conf\webpack-test.conf.js" />
     <Content Include="conf\webpack.conf.js" />
+    <Content Include="Content\test.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="gulpfile.js" />
@@ -194,7 +195,6 @@
   <ItemGroup>
     <Folder Include="App\src\content\" />
     <Folder Include="App_Data\" />
-    <Folder Include="Content\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
