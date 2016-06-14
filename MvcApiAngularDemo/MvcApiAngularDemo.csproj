@@ -133,8 +133,6 @@
     <Compile Include="Repositories\EmployeeRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App\.tmp\index.js" />
-    <Content Include="App\.tmp\templateCacheHtml.js" />
     <Content Include="App\dist\index.js" />
     <Content Include="App\src\app\common\common.js" />
     <Content Include="App\src\app\common\sideNav\sideNavToggle.component.html" />
@@ -154,10 +152,10 @@
     <Content Include="App\src\app\components\employees\employees.service.js" />
     <Content Include="App\src\app\myApp.component.js" />
     <Content Include="App\src\app\myApp.html" />
-    <Content Include="App\src\app\myApp.js" />
     <Content Include="App\src\app\common\sideNav\sideNav.js" />
     <Content Include="App\src\app\common\sideNav\sideNav.component.html" />
     <Content Include="App\src\app\common\sideNav\sideNav.component.js" />
+    <Content Include="App\src\app\myApp.js" />
     <Content Include="App\src\index.js" />
     <Content Include="App\src\test\lib\bindPolyfill.js" />
     <Content Include="App\src\test\lib\mockData.js" />

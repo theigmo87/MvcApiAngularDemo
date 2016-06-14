@@ -1,6 +1,5 @@
 ﻿class SideNavToggleController {
-    constructor($timeout, $mdSidenav, $log) {
-        this.$timeout = $timeout;
+    constructor($mdSidenav, $log) {
         this.$mdSidenav = $mdSidenav;
         this.$log = $log;
     }
@@ -11,5 +10,7 @@
               .then(() => this.$log.debug("toggle " + this.componentid + " is done"));
     }
 }
+
+SideNavToggleController.$inject = ['$mdSidenav', '$log'];
 
 export default SideNavToggleController;
