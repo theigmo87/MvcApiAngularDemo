@@ -11,7 +11,7 @@ const root = angular
         uiRouter,
         Common,
         Components,
-        'ngMaterial'
+        'ngMaterial' 
     ])
     .component('myApp', AppComponent)
     .config(['$urlRouterProvider', '$urlMatcherFactoryProvider', ($urlRouterProvider, $urlMatcherFactoryProvider) => {

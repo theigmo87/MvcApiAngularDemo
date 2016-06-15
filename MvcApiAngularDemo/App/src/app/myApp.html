@@ -1,9 +1,15 @@
-﻿<md-toolbar>
-    toolbar
+﻿<md-toolbar layout="row">
+    <h2>
+        <sidenav-toggle componentid="'navmenu'">
+            <md-icon aria-label="Menu" class="material-icons">menu</md-icon>
+        </sidenav-toggle>
+        .Net MVC/API/Angular demo
+    </h2>
 </md-toolbar>
 <div flex layout="row">
     <sidenav flex-15 layout="row"></sidenav>
     <div layout="column" flex>
+        <div id="server_error" ng-show="!!$root.serverError">error message: {{$root.serverError}}</div>
         <section flex>
             <div ui-view></div>
         </section>
@@ -11,4 +17,4 @@
             flex
         </footer>
     </div>
-</div>
+</div> 

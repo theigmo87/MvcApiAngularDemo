@@ -1,6 +1,13 @@
 ﻿class SideNavController {
-    constructor() {
+    /*@ngInject*/
+    constructor($mdSidenav) {
         this.message = "I'm from the controller!";
+        this._$mdSidenav = $mdSidenav;
+    }
+
+    closeMe(){
+        this._$mdSidenav("navmenu")
+            .close();
     }
 } 
 

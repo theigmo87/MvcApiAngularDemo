@@ -1,4 +1,4 @@
-/// <binding BeforeBuild='default' ProjectOpened='watch, build:dev' />
+/// <binding ProjectOpened='watch, build:dev' />
 const gulp = require('gulp');
 const HubRegistry = require('gulp-hub');
 const browserSync = require('browser-sync');

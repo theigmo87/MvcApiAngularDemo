@@ -1,4 +1,5 @@
 class LoggerService {
+    /*@ngInject*/
     constructor($log, $mdToast) {
         this.$log = $log;
         this.$mdToast = $mdToast;
@@ -34,7 +35,7 @@ class LoggerService {
 
     warning(message, data, title) {
         this._showToast(message);
-        this.$log.warn('Warning: ' + message, data);
+        this.$log.warn('Warning: ' + message, data); 
     }
 
     _showToast(message){
@@ -47,7 +48,5 @@ class LoggerService {
             );
     }
 }
-
-LoggerService.$inject = ['$log', '$mdToast'];
 
 export default LoggerService;

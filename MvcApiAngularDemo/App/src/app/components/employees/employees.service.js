@@ -5,11 +5,11 @@
     }
 
     getEmployees() {
-        return this.$http.get(this._baseUrl).then(response => response.data);
+        return this._$http.get(this._baseUrl).then(response => response.data);
     }
 
     getEmployee(id) {
-        return this.$http.get(this._baseUrl + id).then(response => response.data);
+        return this._$http.get(this._baseUrl + id).then(response => response.data);
     }
 }
 

@@ -1,6 +1,7 @@
 ﻿class EmployeesController {
+    /*@ngInject*/
     constructor(EmployeesService) {
-        this.employeesService = EmployeesService;
+        this._employeesService = EmployeesService;
     }
 
     $onInit() {
@@ -14,11 +15,9 @@
     }
 
     getEmployees(){
-        this.employeesService.getEmployees()
+        this._employeesService.getEmployees()
            .then(response => this.employees = response);
     }
 }
-
-EmployeesController.$inject = ['EmployeesService'];
 
 export default EmployeesController;

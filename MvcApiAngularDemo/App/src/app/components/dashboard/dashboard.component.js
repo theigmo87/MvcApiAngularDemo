@@ -3,7 +3,7 @@ import template from './dashboard.component.html';
 
 const DashboardComponent = {
     controller,
-    template
+    template 
 }
 
 export default DashboardComponent;
