@@ -134,7 +134,66 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\dist\index.js" />
+    <Content Include="App\src.johnpapa\app\app.module.js" />
+    <Content Include="App\src.johnpapa\app\avengers\avengers-spaghetti.js" />
+    <Content Include="App\src.johnpapa\app\avengers\avengers.html" />
+    <Content Include="App\src.johnpapa\app\avengers\avengers.js" />
+    <Content Include="App\src.johnpapa\app\avengers\avengers.module.js" />
+    <Content Include="App\src.johnpapa\app\avengers\config.route.js" />
+    <Content Include="App\src.johnpapa\app\blocks\exception\exception-handler.provider.js" />
+    <Content Include="App\src.johnpapa\app\blocks\exception\exception.js" />
+    <Content Include="App\src.johnpapa\app\blocks\exception\exception.module.js" />
+    <Content Include="App\src.johnpapa\app\blocks\logger\logger.js" />
+    <Content Include="App\src.johnpapa\app\blocks\logger\logger.module.js" />
+    <Content Include="App\src.johnpapa\app\blocks\router\routehelper.js" />
+    <Content Include="App\src.johnpapa\app\blocks\router\router.module.js" />
+    <Content Include="App\src.johnpapa\app\core\config.js" />
+    <Content Include="App\src.johnpapa\app\core\constants.js" />
+    <Content Include="App\src.johnpapa\app\core\core.module.js" />
+    <Content Include="App\src.johnpapa\app\core\dataservice.js" />
+    <Content Include="App\src.johnpapa\app\dashboard\config.route.js" />
+    <Content Include="App\src.johnpapa\app\dashboard\dashboard.html" />
+    <Content Include="App\src.johnpapa\app\dashboard\dashboard.js" />
+    <Content Include="App\src.johnpapa\app\dashboard\dashboard.module.js" />
+    <Content Include="App\src.johnpapa\app\layout\layout.module.js" />
+    <Content Include="App\src.johnpapa\app\layout\shell.html" />
+    <Content Include="App\src.johnpapa\app\layout\shell.js" />
+    <Content Include="App\src.johnpapa\app\layout\sidebar.html" />
+    <Content Include="App\src.johnpapa\app\layout\sidebar.js" />
+    <Content Include="App\src.johnpapa\app\layout\topnav.html" />
+    <Content Include="App\src.johnpapa\app\widgets\ccSidebar.js" />
+    <Content Include="App\src.johnpapa\app\widgets\ccSpinner.js" />
+    <Content Include="App\src.johnpapa\app\widgets\ccWidgetClose.js" />
+    <Content Include="App\src.johnpapa\app\widgets\ccWidgetHeader.js" />
+    <Content Include="App\src.johnpapa\app\widgets\ccWidgetMinimize.js" />
+    <Content Include="App\src.johnpapa\app\widgets\widgetheader.html" />
+    <Content Include="App\src.johnpapa\app\widgets\widgets.module.js" />
+    <Content Include="App\src.johnpapa\content\customtheme.css" />
+    <Content Include="App\src.johnpapa\content\images\AngularJS-small.png" />
+    <Content Include="App\src.johnpapa\content\images\avengersicon-xs.png" />
+    <Content Include="App\src.johnpapa\content\images\avengersicon.png" />
+    <Content Include="App\src.johnpapa\content\images\busy.gif" />
+    <Content Include="App\src.johnpapa\content\images\gg.png" />
+    <Content Include="App\src.johnpapa\content\images\gruntjs.jpg" />
+    <Content Include="App\src.johnpapa\content\styles.css" />
+    <Content Include="App\src.johnpapa\test\lib\bindPolyfill.js" />
+    <Content Include="App\src.johnpapa\test\lib\mockData.js" />
+    <Content Include="App\src.johnpapa\test\lib\specHelper.js" />
+    <Content Include="App\src.johnpapa\test\midway\controller.spec.js" />
+    <Content Include="App\src.johnpapa\test\midway\dataservice.spec.js" />
+    <Content Include="App\src.johnpapa\test\midway\template.spec.js" />
+    <Content Include="App\src.johnpapa\test\midway\view-requests.spec.js" />
+    <Content Include="App\src.johnpapa\test\specs\avengers-route.spec.js" />
+    <Content Include="App\src.johnpapa\test\specs\avengers.spec.js" />
+    <Content Include="App\src.johnpapa\test\specs\ccSidebar.spec.js" />
+    <Content Include="App\src.johnpapa\test\specs\dashboard-route.spec.js" />
+    <Content Include="App\src.johnpapa\test\specs\dashboard.spec.js" />
+    <Content Include="App\src.johnpapa\test\specs\dataservice.spec.js" />
+    <Content Include="App\src.johnpapa\test\specs\exception-handler.provider.spec.js" />
+    <Content Include="App\src.johnpapa\test\specs\sidebar.spec.js" />
     <Content Include="App\src\app\common\common.js" />
+    <Content Include="App\src\app\common\logger\logger.service.js" />
+    <Content Include="App\src\app\common\logger\logger.js" />
     <Content Include="App\src\app\common\sideNav\sideNavToggle.component.html" />
     <Content Include="App\src\app\common\sideNav\sideNavToggle.controller.js" />
     <Content Include="App\src\app\common\sideNav\sideNavToggle.js" />
@@ -217,6 +276,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\src\test\.jshintrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App\src.johnpapa\test\.jshintrc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

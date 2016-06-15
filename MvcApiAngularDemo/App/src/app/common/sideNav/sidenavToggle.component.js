@@ -3,11 +3,11 @@ import template from './sideNavToggle.component.html';
 
 const SideNavToggleComponent = {
     bindings: {
-        componentid: '<',
-        buttontext: '<'
+        componentid: '<'
     },
     controller,
-    template
+    template,
+    transclude: true
 }
 
 export default SideNavToggleComponent;

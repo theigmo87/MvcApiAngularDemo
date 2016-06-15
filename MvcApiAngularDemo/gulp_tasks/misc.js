@@ -8,6 +8,7 @@ const conf = require('../conf/gulp.conf');
 
 gulp.task('clean', clean);
 gulp.task('clean:dev', cleanDev);
+gulp.task('clean:dist', cleanDist);
 gulp.task('other', other);
 
 function clean() {
@@ -16,6 +17,10 @@ function clean() {
 
 function cleanDev() {
     return del([conf.paths.tmp]);
+}
+
+function cleanDist() {
+    return del([conf.paths.dist]);
 }
 
 function other() {

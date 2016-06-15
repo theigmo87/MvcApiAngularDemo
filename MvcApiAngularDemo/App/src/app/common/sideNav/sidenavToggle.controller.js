@@ -1,16 +1,23 @@
 ﻿class SideNavToggleController {
-    constructor($mdSidenav, $log) {
-        this.$mdSidenav = $mdSidenav;
-        this.$log = $log;
+    constructor($mdSidenav, logger) {
+        this._$mdSidenav = $mdSidenav;
+        this._logger = logger;
     }
 
     toggleLeft(){
-        this.$mdSidenav(this.componentid)
-              .toggle()
-              .then(() => this.$log.debug("toggle " + this.componentid + " is done"));
+        this._$mdSidenav(this._targetComponentId)
+            .toggle()
+            .then(() => this._logger.info("toggle " + this._targetComponentId + " is done"));
+    }
+
+    //deep copy the data passed in
+    $onChanges(changes){        
+        if (changes.componentid)
+            this._targetComponentId = angular.copy(changes.componentid.currentValue);
+
     }
 }
 
-SideNavToggleController.$inject = ['$mdSidenav', '$log'];
+SideNavToggleController.$inject = ['$mdSidenav', 'LoggerService'];
 
 export default SideNavToggleController;
