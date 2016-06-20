@@ -50,4 +50,7 @@ A Visual Studio solution with an Asp.net MVC Web Api 2 backend and an Angular fr
 	<li>
 		https://material.angularjs.org/latest/
 	</li>
+	<li>
+		https://angular-translate.github.io/
+	</li>
 </ul>
